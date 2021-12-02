@@ -1,0 +1,107 @@
+{
+   "header": {
+       "url":"",
+       "h1":"Hi, I am John, Creative Technologist",
+       "p":""
+       },
+    "Recent posts":[
+        {
+            "title":"Making a design system from scratch",
+            "time":"12 Feb 2020",
+            "topic":"Design, Pattern",
+            "text":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        },
+        {
+            "title": "Creating pixel perfect icons in Figma",
+            "text": "12 Feb 2020",
+            "time": "Figma, Icon Design",
+            "topic": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        }
+
+    ],
+    "Featured works":[
+        {
+            "url":"",
+            "tilte":"Designing Dashboards",
+            "year":"2020",
+            "topic":"Dashboard",
+            "text":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        },
+        {
+            "url":"",
+            "title":"Vibrant Portraits of 2020",
+            "year":"2018",
+            "topic":"Illustration",
+            "text":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        },
+        {
+            "url": "",
+            "title": "36 Days of Malayalam type",
+            "year":"2018",
+            "topic": "Typography",
+            "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        },
+        {
+            "url": "",
+            "title": "Components",
+            "year":"2018",
+            "topic": "Components, Design",
+            "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+        }
+    ],
+    "Footer":{
+        "facebook":{
+            "url":"",
+            "link":""
+        },
+        "instagram":{
+            "url":"",
+            "link":""
+        },
+        "twitter":{
+            "url":"",
+            "link":""
+        },
+        "linkedin":{
+            "url":"",
+            "link":""
+        },
+        "copyright":"Copyright ©2020 All rights reserved"
+    },
+    "Blog":[
+        {
+        "title":"UI Interactions of the week",
+        "date":"12 Feb 2019",
+        "topic":"Express, Handlebars",
+        "text":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+        {
+        "title":"UI Interactions of the week",
+        "date":"12 Feb 2019",
+        "topic":"Express, Handlebars",
+        "text":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+        {
+        "title":"UI Interactions of the week",
+        "date":"12 Feb 2019",
+        "topic":"Express, Handlebars",
+        "text":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+        {
+        "title":"UI Interactions of the week",
+        "date":"12 Feb 2019",
+        "topic":"Express, Handlebars",
+        "text":"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    }
+    ],
+    "woik1":{
+        "imageurl_1": "",
+        "tilte": "Designing Dashboards",
+        "year": "2020",
+        "topic": "Dashboard",
+        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        "heading_1":"heading1",
+        "heading_2":"heading2"
+
+    }
+}
