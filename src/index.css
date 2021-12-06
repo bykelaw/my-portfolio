@@ -1,14 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root{
-  --primary: #FF6464;
+  --primary:#FF6464;
   --secondry:#00A8CC;
   --dark:#21243D;
   --light: #8695A4;
+  --light2: #EDF7FA;
+  --light3:#e0e0e0;
 }
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 * {
   box-sizing: border-box;
@@ -20,25 +26,9 @@
   scrollbar-width: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
-
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 
 button {
   font-family: var(--font_regular);
@@ -59,3 +49,12 @@ select:focus,
 textarea:focus {
   outline: none;
 }
+.head{
+  color:#7956D2
+}
+  h5 {
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 3.75rem;
+    font-weight:400;
+  }
