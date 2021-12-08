@@ -4,6 +4,7 @@ import { Facebook } from "@styled-icons/entypo-social/Facebook";
 import { Instagram } from "@styled-icons/fa-brands/Instagram";
 import { Twitter } from "@styled-icons/fa-brands/Twitter";
 import { Linkedin } from "@styled-icons/bootstrap/Linkedin";
+import {Github} from "@styled-icons/bootstrap/Github";
 import { NavLink } from "react-router-dom";
 const FooterStyle = styled.div`
   
@@ -43,16 +44,19 @@ function Footer() {
     <FooterStyle>
       <div>
         <a href="https://github.com/bykelaw">
-          <Facebook />
-        </a>
-        <a href="https://github.com/bykelaw">
-          <Instagram />
-        </a>
-        <a href="https://github.com/bykelaw">
-          <Twitter />
+          <Github />
         </a>
         <a href="https://www.linkedin.com/in/lawrence-ughonu">
           <Linkedin />
+        </a>
+        <a href="https://twitter.com/mr_chiblaw">
+          <Twitter />
+        </a>
+        <a href="https://www.instagram.com/ughonulawrence">
+          <Instagram />
+        </a>
+        <a href="https://web.facebook.com/lawrence.chibikem">
+          <Facebook />
         </a>
       </div>
       <p>Copyright ©2021 All rights reserved </p>

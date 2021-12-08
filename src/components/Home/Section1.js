@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { me } from "../../assets";
 import HomeStyle from "./HomeStyle";
+import text from "../../text.json"
 
 const Section1Style = styled(HomeStyle)`
 
@@ -87,15 +88,8 @@ function Section1() {
   return (
     <Section1Style>
       <img src={me} alt="Lawrence" />
-      <h1>
-        Hi, I am Lawrence,
-        <br /> Software Engineer
-      </h1>
-      <p>
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
+      <h1>{text.home.section1.heading}</h1>
+      <p>{text.home.section1.text}</p>
 
       <button>Download Resume</button>
     </Section1Style>

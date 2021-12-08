@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from "styled-components"
 import HomeStyle from './HomeStyle';
-import PostCard from './PostCard';
+import text from "../../text.json"
+import PostCard from "./PostCard";
 const RecentPostStyle = styled(HomeStyle)`
 
   background-color: var(--light2);
@@ -41,22 +42,19 @@ const RecentPostStyle = styled(HomeStyle)`
 function RecentPost() {
   return (
     <RecentPostStyle>
-
       <h5>Recent posts</h5>
       <p class="view-all">View all</p>
-      <PostCard
-        title='Making a design system from scratch'
-        date='12 Feb 2020'
-        topic='Design, Pattern'
-        text='Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.' />
-      <PostCard
-        title='Making a design system from scratch'
-        date='12 Feb 2020'
-        topic='Design, Pattern'
-        text='Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.' />
-      
+      {text.home.recent_posts.map((item) => (
+        <PostCard
+          title={item.title}
+          date={item.date}
+          key={item.date + item.title}
+          topic={item.topic}
+          text={item.text.substring(0, 250) + "..."}
+        />
+      ))}
     </RecentPostStyle>
-  )
+  );
 }
 
 export default RecentPost

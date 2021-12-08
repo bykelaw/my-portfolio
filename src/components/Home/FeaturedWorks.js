@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { digifigs, swiftbranding } from "../../assets";
+import * as assests from "../../assets";
 import FeaturedWorksCard from "./FeaturedWorksCard";
-import HomeStyle from './HomeStyle'
+import HomeStyle from './HomeStyle';
+import text from "../../text.json"
 
 const Wrapper = styled(HomeStyle)`
   div + div {
@@ -12,20 +13,15 @@ const Wrapper = styled(HomeStyle)`
 function FeaturedWorks() {
   return (
     <Wrapper>
-      <FeaturedWorksCard
-        image={digifigs}
-        title="Digifigs Landing page"
-        year="2021"
-        topic="Landing Page"
-        text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-      />
-      <FeaturedWorksCard
-        image={swiftbranding}
-        title="Swiftbranding"
-        year="2020"
-        topic="Landing Page"
-        text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-      />
+      {text.home.featured_works.map((item) => (
+        <FeaturedWorksCard
+          image={assests[item.image]}
+          title={item.title}
+          year={item.year}
+          topic={item.topic}
+          text={item.text.substring(0,250) + "..."}
+        />
+      ))}
     </Wrapper>
   );
 }

@@ -1,0 +1,52 @@
+{
+    "header": {
+        "nav": [
+            "Logo",
+            "Works",
+            "Blog",
+            "Contact"
+        ],
+        "sidebar": [
+            "Logo",
+            "Works",
+            "Blog",
+            "Contact"
+        ]
+    },
+    "home": {
+        "section1": {
+            "heading": "Hi, I am Lawrence Software Engineer",
+            "text": "I love creating visual and interactive elements that keep users highly engaged with your web applications with the primary objective of effectively and aesthetically communicating the essence of your product to them."
+        },
+        "recent_posts": [
+            {
+                "title": "Design System from Scratch",
+                "date": "16th Nov 2021",
+                "topic": "Figma Design",
+                "text": "What do you think of faster project turnarounds? How about consistency in all of your products? Does better UX and customer satisfaction sound good to you? This isn’t some new miracle product that’s available to buy — but you can build it yourself."
+            },
+            {
+                "title": "Getting Started with Redux",
+                "date": "20th Oct 2021",
+                "topic": "React State",
+                "text": "Redux is a predictable state container for JavaScript apps.It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger."
+            }
+        ],
+        "featured_works": [
+            {
+                "image": "swiftbranding",
+                "title": "Swiftbranding",
+                "year": "2020",
+                "topic": "Routing with React Router",
+                "text": "Managed website development project from initial design through completion, optimizing all cross-browser and multi-platform compactibility using React library. Worked alongside  a team of developers to create a custom website for Swiftbranding (https: //www.swiftbranding.ng)using react library and CSS modules for styling.For me, the most interesting part of the project was the routing using React Router. The project required an in-depth understanding of URL Parameters, Nested Routes, how to pass props to Router Components, Code Splitting, etc. It was also my first project which require the use of React Router in dropdown navigation."
+            },
+            {
+                "image": "digifigs",
+                "title": "Digifigs",
+                "year": "2021",
+                "topic": "Creative use of UI elements",
+                "text": "Front-end role in the refactored and updated Digifigs website using react library and styled-components for  styling. Worked with carefully selected fonts, color pallet and other assets to create an awesome user-interface."
+            }
+        ]
+    }
+}
