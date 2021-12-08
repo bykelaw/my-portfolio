@@ -1,48 +1,33 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
+import { digifigs, swiftbranding } from "../../assets";
+import FeaturedWorksCard from "./FeaturedWorksCard";
+import HomeStyle from './HomeStyle'
 
-import {PostCardStyle} from "./PostCard";
-
-const FeaturedStyle = styled(PostCardStyle)`
-  img {
-    width:calc(100% - 2.25rem);
-    padding: 0 1.125rem;
-    border-radius:6px;
-    margin-bottom:1rem;
-
-  }
-  p > span:first-child{
-    font-size:400;
-    background:var(--dark);
-    color:white;
-    height: 1.5625rem;
-    padding:0 0.75rem;
-    border-radius:0.75rem;
-
-  }
-  p > span:last-child{
-    color:var(--light)
-  }
-  p > span:last-child::before {
-    background: transparent;
-    color:var(--light)
+const Wrapper = styled(HomeStyle)`
+  div + div {
+    margin-top: 1.650rem;
   }
 `;
-
-function FeaturedWorks({ image, title, year, topic, text }) {
+function FeaturedWorks() {
   return (
-    <>
-      <FeaturedStyle>
-        <img src={image} alt={`${image}`} />
-        <h2>{ title }</h2>
-        <p>
-          <span>{ year }</span>
-          <span>{ topic }</span>
-        </p>
-        <p>{ text }</p>
-      </FeaturedStyle>
-    </>
+    <Wrapper>
+      <FeaturedWorksCard
+        image={digifigs}
+        title="Digifigs Landing page"
+        year="2021"
+        topic="Landing Page"
+        text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      />
+      <FeaturedWorksCard
+        image={swiftbranding}
+        title="Swiftbranding"
+        year="2020"
+        topic="Landing Page"
+        text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      />
+    </Wrapper>
   );
 }
 
-export default FeaturedWorks;
+export default FeaturedWorks

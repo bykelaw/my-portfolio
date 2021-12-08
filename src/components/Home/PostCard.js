@@ -27,6 +27,34 @@ export const PostCardStyle = styled.div`
       background-color: black;
       margin: 0 1.5rem;
     }
+
+    @media (min-width: 37.5rem) {
+      img{
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 43.75rem) and (min-width: 37.5rem) and (max-width: 400px) {
+      span {
+        display: block;
+      }
+      & > span:last-child::before {
+        display: block;
+        height: 1px;
+        width: 1.25rem;
+      }
+    }
+
+    @media (max-width: 350px) {
+      span {
+        display: block;
+      }
+      & > span:last-child::before {
+        display: block;
+        height: 1px;
+        width: 1.25rem;
+      }
+    }
   }
 `;
 
@@ -35,10 +63,10 @@ function PostCard({ title, date, topic, text }) {
     <PostCardStyle>
       <h2>{title}</h2>
       <p>
-        <span>{ date }</span>
-        <span>{ topic }</span>
+        <span>{date}</span>
+        <span>{topic}</span>
       </p>
-      <p>{ text }</p>
+      <p>{text}</p>
     </PostCardStyle>
   );
 }
