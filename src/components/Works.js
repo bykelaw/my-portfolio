@@ -1,7 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
+import text from "../text.json"
+import styled from "styled-components";
 import FeaturedWorksCard from './Home/FeaturedWorksCard'
-import { digifigs, swiftbranding } from "../assets";
+import * as assets from "../assets";
 
 const WorksStyle = styled.div`
   @media (min-width: 37.5rem) {
@@ -14,20 +15,15 @@ const WorksStyle = styled.div`
 function Works() {
   return (
     <WorksStyle>
-      <FeaturedWorksCard
-        image={digifigs}
-        title="Digifigs Landing page"
-        year="2021"
-        topic="Landing Page"
-        text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-      />
-      <FeaturedWorksCard
-        image={swiftbranding}
-        title="Swiftbranding"
-        year="2020"
-        topic="Landing Page"
-        text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-      />
+      {text.home.featured_works.map((item) => (
+        <FeaturedWorksCard
+          image={assets[item.image]}
+          title={item.title}
+          year={item.year}
+          topic={item.topic}
+          text={item.text.substring(0, 250) + "..."}
+        />
+      ))}
     </WorksStyle>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import PostCard from "./Home/PostCard";
+import text from "../text.json"
 import styled from "styled-components"
 const Wrapper = styled.div`
 & > div {
@@ -26,12 +27,15 @@ const Wrapper = styled.div`
 function Blog() {
   return (
     <Wrapper>
-      <PostCard
-        title="Making a design system from scratch"
-        date="12 Feb 2020"
-        topic="Design, Pattern"
-        text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-      />
+      {text.home.recent_posts.map((item) => (
+        <PostCard
+          title={item.title}
+          date={item.date}
+          key={item.date + item.title}
+          topic={item.topic}
+          text={item.text.substring(0, 250) + "..."}
+        />
+      ))}
     </Wrapper>
   );
 }
