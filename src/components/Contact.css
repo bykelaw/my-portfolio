@@ -1,13 +1,10 @@
-.Contact{
-  padding-top: 1em;
-  /* display: grid; */
-}
+
 .contact-title{
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5em;
-  display: grid;
-  margin-top: 3em;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -23,7 +20,7 @@
   margin-bottom: 3em;
 }
 form{
-  width: 35%;
+  width: 45%;
 }
 
 input{

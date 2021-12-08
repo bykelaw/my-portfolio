@@ -6,11 +6,17 @@ import { Twitter } from "@styled-icons/fa-brands/Twitter";
 import { Linkedin } from "@styled-icons/bootstrap/Linkedin";
 import { NavLink } from "react-router-dom";
 const FooterStyle = styled.div`
+  
   display: flex;
+  width:100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 9.375rem;
+  /* margin-top: 9.375rem; */
+  margin-top: atuo;
+  margin-bottom:0;
+  
+
   height: 11.375rem;
 div{
   display:flex;

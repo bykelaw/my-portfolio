@@ -42,45 +42,8 @@ const Contact = () => {
           <input type="submit" />
         </form>
       </div>
-      <div className="footer">
-        <div className="center-top-link">
-          <a href="#hm">
-            <div className="top-link"></div>
-          </a>
-        </div>
-        <div className="contact-links">
-          <div>
-            <a href="https://github.com/bykelaw">
-              <span>
-                <i className="fa fa-github-square"></i>
-              </span>
-            </a>
-          </div>
-          <div>
-            {" "}
-            <a href="https://www.linkedin.com/in/lawrence-ughonu">
-              <span>
-                {" "}
-                <i className="fa fa-linkedin-square"> </i>
-              </span>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <span>
-                <i className="fa fa-facebook-square"></i>
-              </span>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <span>
-                <i className="fa fa-twitter-square"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
+      
+          
     </div>
   );
 };
