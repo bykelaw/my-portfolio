@@ -1,12 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-html{
-  scroll-behavior: smooth;
+:root{
+  --primary:#FF6464;
+  --secondry:#00A8CC;
+  --dark:#21243D;
+  --light: #8695A4;
+  --light2: #EDF7FA;
+  --light3:#e0e0e0;
 }
-
 
 body {
   margin: 0;
@@ -17,7 +16,51 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+html {
+  scroll-behavior: smooth;
+  
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font_regular);
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+.head{
+  color:#7956D2
+}
+  h5 {
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 3.75rem;
+    font-weight:400;
+  }
