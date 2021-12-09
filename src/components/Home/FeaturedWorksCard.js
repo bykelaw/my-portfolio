@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import HomeStyle from "./HomeStyle";
 
-import {PostCardStyle} from "./PostCard";
+import { PostCardStyle } from "./PostCard";
 
 const FeaturedStyle = styled(PostCardStyle)`
   img {
@@ -30,22 +30,36 @@ const FeaturedStyle = styled(PostCardStyle)`
     display: grid;
     grid-template-columns: 1fr 2.06fr;
 
-    img {
+    a {
       grid-column: 1/2;
       grid-row: 1/4;
-      display: block;
+      /* display: block; */
       width: 100%;
       height: 100%;
       padding: 0;
       margin: 0;
       border-radius: 6px;
       box-shadow: -1px -1px 5px var(--light);
+      overflow:hidden;
+      cursor:pointer;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: auto;
+        transition: all 0.3s;
+      }
+      &:hover img {
+        transform: scale(1.1);
+        border: 3px solid red;
+      }
     }
     p > span:first-child {
       height: auto;
       padding: 0 0.75rem;
-      border-radius: 1.2rem;
-      width:fit-content;
+      border-radius: 1.1rem;
+      width: fit-content;
     }
     h2,
     p {
@@ -80,17 +94,19 @@ const FeaturedStyle = styled(PostCardStyle)`
   }
 `;
 
-function FeaturedWorksCard({ image, title, year, topic, text }) {
+function FeaturedWorksCard({ image, title, year, topic, text, url }) {
   return (
     <>
       <FeaturedStyle>
-        <img src={image} alt={`${image}`} />
-        <h2>{ title }</h2>
+        <a href={url}>
+          <img src={image} alt={`${image}`} />
+        </a>
+        <h2>{title}</h2>
         <p>
-          <span>{ year }</span>
-          <span>{ topic }</span>
+          <span>{year}</span>
+          <span>{topic}</span>
         </p>
-        <p>{ text }</p>
+        <p>{text}</p>
       </FeaturedStyle>
     </>
   );

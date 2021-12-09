@@ -15,6 +15,7 @@ function FeaturedWorks() {
     <Wrapper>
       {text.home.featured_works.map((item) => (
         <FeaturedWorksCard
+          url={item.url}
           image={assests[item.image]}
           title={item.title}
           year={item.year}

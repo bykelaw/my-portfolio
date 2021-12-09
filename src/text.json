@@ -35,6 +35,7 @@
         "featured_works": [
             {
                 "image": "swiftbranding",
+                "url":"https://www.swiftbranding.ng",
                 "title": "Swiftbranding",
                 "year": "2020",
                 "topic": "Routing with React Router",
@@ -42,6 +43,7 @@
             },
             {
                 "image": "digifigs",
+                "url":"https://digifigs.com",
                 "title": "Digifigs",
                 "year": "2021",
                 "topic": "Creative use of UI elements",

@@ -21,7 +21,8 @@ function Works() {
     <WorksStyle>
       {text.home.featured_works.map((item) => (
         <FeaturedWorksCard
-          image={assets[item.image]}
+          image={ assets[item.image] }
+          url={item.url}
           title={item.title}
           year={item.year}
           topic={item.topic}

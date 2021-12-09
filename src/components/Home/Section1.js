@@ -30,11 +30,17 @@ const Section1Style = styled(HomeStyle)`
     justify-content: space-between;
     text-align: unset;
     p,
-    h1{
+    h1 {
       padding-right: 1rem;
     }
-    a{
-      padding-top:1rem;
+    a {
+      margin-top: 1rem;
+      box-shadow: 0 0 5px 2px var(--light);
+      width:fit-content;
+      transition: all 0.3s;
+      &:hover{
+        background-color:var(--light);
+      }
     }
     img {
       display: block;
@@ -77,7 +83,7 @@ const Section1Style = styled(HomeStyle)`
       width: 15.1875rem;
       height: 15.1875rem;
     }
-     p{
+    p {
       padding-right: 0.8rem;
       line-height: 1.4;
     }

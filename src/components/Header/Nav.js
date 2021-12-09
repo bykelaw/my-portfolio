@@ -11,6 +11,7 @@ const NavStyle = styled.div`
   background: white;
   z-index: 3;
   display: flex;
+  box-shadow: 10px 0 5px -2px var(--light);
 
   .nav-btn {
     display: block;
@@ -23,13 +24,13 @@ const NavStyle = styled.div`
   .contact {
     display: none;
   }
-  .home {
+  .logo {
     flex-grow: 1;
     margin-left: 1.125rem;
   }
 
   @media (min-width: 37.5rem) {
-    padding: 1.5rem  0;
+    padding: 1.5rem 0;
     .active {
       color: var(--primary);
     }
@@ -65,7 +66,7 @@ const Nav = ({ onClick }) => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <NavStyle>
-      <NavLink to="/" className="logo">Logo</NavLink >
+      <NavLink to="/" className="logo">Home</NavLink >
       <NavLink to="/blog" className="blog">Blog</NavLink >
       <NavLink to="/works" className="works">Works</NavLink >
       <NavLink to="/contact" className="contact">Contact</NavLink >
