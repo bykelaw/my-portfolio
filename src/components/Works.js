@@ -6,9 +6,13 @@ import * as assets from "../assets";
 
 const WorksStyle = styled.div`
   @media (min-width: 37.5rem) {
+    padding-top: 5rem;
     & > div {
-      width: 42.5625rem;
+      width: 75%;
       margin: auto;
+    }
+    p{
+      line-height:1.4;
     }
   }
 `;

@@ -29,12 +29,13 @@ export const PostCardStyle = styled.div`
     }
 
     @media (min-width: 37.5rem) {
-      img{
+      img {
         padding: 0;
       }
+      
     }
 
-    @media (max-width: 43.75rem) and (min-width: 37.5rem) and (max-width: 400px) {
+    @media (max-width: 43.75rem) and (min-width: 37.5rem) {
       span {
         display: block;
       }
@@ -43,6 +44,10 @@ export const PostCardStyle = styled.div`
         height: 1px;
         width: 1.25rem;
       }
+    }
+
+    @media (min-width: 62.5rem) {
+  
     }
 
     @media (max-width: 350px) {

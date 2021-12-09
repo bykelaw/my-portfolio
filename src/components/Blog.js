@@ -21,6 +21,9 @@ const Wrapper = styled.div`
     p + img {
       margin-top: 2.875rem;
     }
+    p{
+      line-height:1.4;
+    }
   }
 `;
 

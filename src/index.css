@@ -1,21 +1,20 @@
-:root{
-  --primary:#FF6464;
-  --secondry:#00A8CC;
-  --dark:#21243D;
-  --light: #8695A4;
-  --light2: #EDF7FA;
-  --light3:#e0e0e0;
+:root {
+  --primary: #ff6464;
+  --secondry: #00a8cc;
+  --dark: #21243d;
+  --light: #8695a4;
+  --light2: #edf7fa;
+  --light3: #e0e0e0;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 * {
   box-sizing: border-box;
@@ -29,9 +28,8 @@ body {
 
 html {
   scroll-behavior: smooth;
-  
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -48,19 +46,48 @@ button {
   user-select: none;
 }
 
-
 input:focus,
 button:focus,
 select:focus,
 textarea:focus {
   outline: none;
 }
-.head{
-  color:#7956D2
+.head {
+  color: #7956d2;
 }
-  h5 {
-    text-align: center;
-    font-size: 1.125rem;
-    line-height: 3.75rem;
-    font-weight:400;
+h5 {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 3.75rem;
+  font-weight: 400;
+}
+
+@media (min-width: 50rem) {
+
+  p {
+    font-size: 1rem;
   }
+  h1 {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 56.25rem) {
+
+  button {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 62.5rem) {
+}
+
+@media (min-width: 75rem) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.4;
+    width: 40vw;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}

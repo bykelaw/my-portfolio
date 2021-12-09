@@ -12,7 +12,7 @@ const FeaturedStyle = styled(PostCardStyle)`
     margin-bottom: 1rem;
   }
   p > span:first-child {
-    font-size: 400;
+    font-weight: 400;
     background: var(--dark);
     color: white;
     height: 1.5625rem;
@@ -33,20 +33,29 @@ const FeaturedStyle = styled(PostCardStyle)`
     img {
       grid-column: 1/2;
       grid-row: 1/4;
-      display:block;
-      width:100%;
-      height:100%;
-      padding:0;
-      margin:0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
       border-radius: 6px;
       box-shadow: -1px -1px 5px var(--light);
     }
-    h2,p{
-      padding-left:2rem;
+    p > span:first-child {
+      height: auto;
+      padding: 0 0.75rem;
+      border-radius: 1.2rem;
+      width:fit-content;
+    }
+    h2,
+    p {
+      padding-left: 2rem;
     }
     h2:nth-child(2) {
       grid-column: 2/3;
       grid-row: 1/2;
+      font-size: 1.875rem;
+      line-height: 1.4;
     }
     p:nth-child(3) {
       grid-column: 2/3;
@@ -58,15 +67,16 @@ const FeaturedStyle = styled(PostCardStyle)`
       grid-row: 3/4;
     }
   }
+
   @media (max-width: 350px) {
     p {
       span {
-      display: inline-block;
+        display: inline-block;
+      }
+      span + span {
+        margin-left: 2rem;
+      }
     }
-    span + span{
-      margin-left:2rem;
-    }
-  }
   }
 `;
 

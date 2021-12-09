@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { me } from "../../assets";
 import HomeStyle from "./HomeStyle";
 import text from "../../text.json"
 
 const Section1Style = styled(HomeStyle)`
-
   img {
     display: block;
     height: 10.6875rem;
@@ -25,14 +25,16 @@ const Section1Style = styled(HomeStyle)`
     margin-bottom: 1.6875rem;
   }
 
-
   @media (min-width: 37.5rem) {
     grid-template-columns: 2.05fr 1fr;
     justify-content: space-between;
     text-align: unset;
     p,
-    h1 {
+    h1{
       padding-right: 1rem;
+    }
+    a{
+      padding-top:1rem;
     }
     img {
       display: block;
@@ -56,30 +58,46 @@ const Section1Style = styled(HomeStyle)`
     p {
       padding-top: 0;
     }
-  
   }
 
   @media (min-width: 50rem) {
     img {
-      width: 15.1875em;
-      height: 15.1875em;
+      width: 15.1875rem;
+      height: 15.1875rem;
     }
- 
   }
-  @media (min-width: 56.25rem) {
+  @media (min-width: 56.25rrem) {
     img {
-      width: 15.1875em;
-      height: 15.1875em;
+      width: 15.1875rem;
+      height: 15.1875rem;
     }
-   
   }
   @media (min-width: 62.5rem) {
     img {
-      width: 15.1875em;
-      height: 15.1875em;
+      width: 15.1875rem;
+      height: 15.1875rem;
+    }
+     p{
+      padding-right: 0.8rem;
+      line-height: 1.4;
+    }
+  }
+  @media (min-width: 75rem) {
+    img {
+      width: 22rem;
+      height: 22rem;
     }
     p {
       padding-right: 10rem;
+    }
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.4;
+      width: 40vw;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 1.4;
     }
   }
 `;
@@ -88,10 +106,13 @@ function Section1() {
   return (
     <Section1Style>
       <img src={me} alt="Lawrence" />
-      <h1>{text.home.section1.heading}</h1>
+      {/* <h1>{text.home.section1.heading}</h1> */}
+      <h1>{`Hi, I am Lawrence \n Software Engineer`}</h1>
       <p>{text.home.section1.text}</p>
 
-      <button>Download Resume</button>
+      <Link to="/resume.pdf" target="_blank">
+        <button>Download Resume</button>
+      </Link>
     </Section1Style>
   );
 }

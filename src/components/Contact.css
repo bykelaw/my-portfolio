@@ -79,3 +79,6 @@ input,textarea{
     width: 90%;
   }
 }
+h1{
+  width: auto;
+}

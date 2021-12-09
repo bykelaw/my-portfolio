@@ -53,6 +53,14 @@ const HomeStyle = styled.div`
   }
   @media (min-width: 62.5rem) {
     padding: 8.75rem 9.25rem;
+    h1 {
+      font-size: 3rem;
+      line-height: 1.4;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.4;
+    }
   }
 `;
 export default HomeStyle;
