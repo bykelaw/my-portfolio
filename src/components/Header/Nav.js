@@ -41,7 +41,7 @@ const NavStyle = styled.div`
       display: block;
       text-shadow: 0 0 1px var(--primary);
       transition: all 0.5s;
-      font-size: 1.875rem;
+      font-size: 1.2rem;
       &:hover {
         text-shadow: 0 0 10px;
       }
@@ -58,6 +58,16 @@ const NavStyle = styled.div`
     }
     .nav-btn {
       display: none;
+    }
+  }
+
+  @media (min-width: 50rem) {
+    .blog,
+    .works,
+    .contact,
+    .logo {
+      font-size: 1.875rem;
+     
     }
   }
 `;

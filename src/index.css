@@ -1,6 +1,6 @@
 :root {
   --primary: #ff6464;
-  --secondry: #00a8cc;
+  --secondary: #00a8cc;
   --dark: #21243d;
   --light: #8695a4;
   --light2: #edf7fa;
@@ -63,7 +63,6 @@ h5 {
 }
 
 @media (min-width: 50rem) {
-
   p {
     font-size: 1rem;
   }
@@ -72,7 +71,6 @@ h5 {
   }
 }
 @media (min-width: 56.25rem) {
-
   button {
     font-size: 1.25rem;
   }

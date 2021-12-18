@@ -18,10 +18,16 @@ const SidebarStyle = styled.div`
   }
 
   a + a {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
   .blog {
     padding-top: 1.875rem;
+  }
+  .blog,
+  .works,
+  .contact {
+    border-bottom: 1px solid var(--light);
+    padding-bottom: 1.5rem;
   }
 
   position: fixed;
@@ -33,8 +39,8 @@ const SidebarStyle = styled.div`
     props.showSidebar ? "translateX(0)" : "translateX(-100%)"};
   transition: all 0.5s;
   z-index: 1;
-  @media (min-width:37.5rem){
-    display:none;
+  @media (min-width: 37.5rem) {
+    display: none;
   }
 `;
 const Sidebar = ({ isOpen,click }) => (

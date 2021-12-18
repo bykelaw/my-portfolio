@@ -4,39 +4,45 @@ import HomeStyle from './HomeStyle';
 import text from "../../text.json"
 import PostCard from "./PostCard";
 const RecentPostStyle = styled(HomeStyle)`
-
+  position: relative;
   background-color: var(--light2);
 
-  @media (max-width: 37.5rem) {
-  padding: 0 0.625rem 2.375rem;
-  
-  }
 
   div + div {
     margin-top: 1rem;
   }
   grid-template-columns: 1fr 1fr;
-  .view-all{
-    color:var(--secondry);
-    cursor:pointer;
-    justify-content:end;
-    align-items:center;
-    display:flex;
+  .view-all {
+    color: var(--secondary);
+    cursor: pointer;
+    justify-content: end;
+    align-items: center;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 1rem;
   }
-
+  h5 {
+    text-align: left;
+    display: inline-block;
+  }
+  @media (max-width: 37.5rem) {
+    padding: 0 0.625rem 2.375rem;
+  }
 
   @media (min-width: 37.5rem) {
     div + div {
       margin-top: unset;
       margin-left: 1.25rem;
     }
-    h5{
-      text-align:left;
+    h5 {
+      text-align: left;
     }
-
-  
+    .view-all{
+      position: static;
+      display:flex;
+    }
   }
-
 `;
 
 function RecentPost() {
