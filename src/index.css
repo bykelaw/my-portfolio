@@ -6,6 +6,9 @@
   --light2: #edf7fa;
   --light3: #e0e0e0;
 }
+html{
+  font-size: 62.5%;
+}
 
 body {
   margin: 0;
